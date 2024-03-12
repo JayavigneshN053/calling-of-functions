@@ -1,0 +1,19 @@
+#include<stdio.h>
+int numbers1(int n){
+    if(n==0)
+        return 0;
+        else
+            return n+numbers1(n-1);
+}
+int numbers2(int n){
+    if(n==0)
+        return 0;
+        else
+        return n+numbers1(n-1);
+}
+int main(){
+    int a,n;
+    scanf("%d",&n);
+    a=numbers1(n);
+    printf("%d",a);
+}
